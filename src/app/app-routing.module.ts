@@ -1,11 +1,23 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PricingComponent } from './pricing/pricing.component';
+import { AppComponent } from './app.component';
+import { SigninComponent } from './signin/signin.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { HomeComponent } from './home/home.component';
 
+import { CommonModule } from '@angular/common';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'pricing', component: PricingComponent },
+  { path: 'signin', component: SigninComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  { path: '', component: HomeComponent }
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [CommonModule,
+            RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
