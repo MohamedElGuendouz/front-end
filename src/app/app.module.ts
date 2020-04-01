@@ -11,6 +11,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { CourseComponent } from './course/course.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CheckoutComponent } from './checkout/checkout.component';
     PricingComponent,
     SigninComponent,
     HomeComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    CourseComponent
   ],
   imports: [
     BrowserModule,
