@@ -12,10 +12,12 @@ import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CourseComponent } from './course/course.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 @NgModule({
   declarations: [
+    PdfViewerModule,
     AppComponent,
     PricingComponent,
     SigninComponent,
