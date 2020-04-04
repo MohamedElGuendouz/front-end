@@ -6,7 +6,7 @@ const app = express();
 app.use(express.static(__dirname + '/dist/front-end'));
 
 app.get('/*', function(req,res) {
-  res.sendFile(__dirname+ '/dist/front-end/src/index.html');
+  res.sendFile(__dirname+ '/dist/front-end/index.html');
 });
 
 // default Heroku port
