@@ -1,10 +1,7 @@
-const express = require('express');
-const path = require('path');
-const ngApp = express();
-
-ngApp.use(express.static('./dist/front-end'));
-
-ngApp.get('/*', function (request, response) {
-    response.sendFile(path.join(__dirname, '/dist/index.html'));
+const express = require('express');  
+const app = express();
+app.use(express.static(__dirname + '/dist'));
+app.all('*', (req, res) => {
+  res.status(200).sendFile(__dirname + '/dist/index.html');
 });
-ngApp.listen(process.env.PORT || 8080);
+app.listen(process.env.PORT || 8080);
