@@ -12,6 +12,7 @@ import { SigninComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CourseComponent } from './course/course.component';
+import { PdfViewComponent } from './pdf-view/pdf-view.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CourseComponent } from './course/course.component';
     SigninComponent,
     HomeComponent,
     CheckoutComponent,
-    CourseComponent
+    CourseComponent,
+    PdfViewComponent
   ],
   imports: [
     BrowserModule,
